@@ -69,8 +69,7 @@ p{
   @media only screen and (max-width: 600px) {
     body {
       flex-direction: column;
-      background-image: url(emages/bg-mobile.svg);
-    
+      background-image: url(images/bg-mobile.svg);    
     }
     .image{
       display: flex;
