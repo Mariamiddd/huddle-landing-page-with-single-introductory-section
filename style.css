@@ -1,123 +1,132 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   }
+
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;        
-    background-color: #684BB1;
-    background-repeat: no-repeat;
-    font-family: 'Poppins', sans-serif;
+  display: flex;
+  height: 100vh;
+  width: 100vw;      
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:#684BB1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.image{
+  display: flex;
+  flex-direction: column;
+  gap: 104px;
+}
+.icon{
+  width: 200px;
+} 
+.text{
+     margin: auto 0;
 }
 h1{
-    margin-right: 118px;
-    margin-bottom: 24px;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 60px;
-    color: #ffffff;
-}
-p{
-    margin-right: 85px;
-    margin-bottom: 24px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
-}
-.button{
-    height: 56px;
-    width: 200px;
-    border-radius: 28px;
-    border: none;
-    background-color: #ffffff;
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 400;
-    color:#684BB1;
-    box-shadow: 2px 4px 9px 3px #00000042;
-}
-.button:hover{
-    background-color: #E880E8;
-    color: #ffffff;
-    cursor: pointer;
-}
-.fabe{
+  margin-bottom: 24px;
+  width: 20ch;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
   color: #ffffff;
 }
-.fabe:hover{
+p{  
+  margin-bottom: 24px;
+  width: 49ch;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+}
+
+
+.fb:hover, .insta:hover, .twitter:hover{
   filter: invert(41%) sepia(67%) saturate(1394%) hue-rotate(298deg) brightness(110%) contrast(101%);
   cursor: pointer;
 }
-.twitter:hover{
-  filter: invert(41%) sepia(67%) saturate(1394%) hue-rotate(298deg) brightness(110%) contrast(101%);
+
+.button{
+  height: 56px;
+  width: 200px;
+  border-radius: 28px;
+  border: none;
+  background-color: #ffffff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  color:#684BB1;
+  box-shadow: 2px 4px 9px 3px #00000042;
+}
+.button:hover{
+  background-color: #E880E8;
+  color: #ffffff;
   cursor: pointer;
 }
-.insta:hover{
-  filter: invert(41%) sepia(67%) saturate(1394%) hue-rotate(298deg) brightness(110%) contrast(101%);
-  cursor: pointer;
-}
-@media only screen and (max-width: 376px) {
+  @media only screen and (max-width: 600px) {
     body {
-        flex-direction: column;
-        background-image: url(emages/bg-mobile.svg);
+      flex-direction: column;
+      background-image: url(emages/bg-mobile.svg);
     
     }
-    .mainimg{
-    display: flex;
-    max-width: 80%;
-    margin: 0 auto;
+    .image{
+      display: flex;
+      margin: 0 auto;
+      max-width: 90%;
+      align-self: center;
+      gap: 69px;
     }
-    .icon{
-    height: 19px;
-    width: 120px;
-    margin: 38px 0 20px 18px;
 
+    .icon{
+    margin-top: 38px;
+    width: 120px;
     }
   h1{
+    margin-top: 60px;
+    margin-bottom: 16px;
+    width: 20ch;
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
     text-align: center;
-    margin: 60px 47px 16px 48px;
-
   }
 p{
+    width: 33ch;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-    margin: 0px 35px 24px 36px;
   }
 .button{
-  margin: 0 87px 0 88px;
-}
-.socmediaicons{
-  margin: 64px 120px 40px 120px;
-}
+  margin-bottom: 64px;
 
 }
-@media only screen and (min-width: 377px) {
-
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+}
+@media only screen and (min-width: 601px) {
   body{
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/bg-desktop.svg);
+
+  }
+  .socicons{
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 400px;
+
+  }
+  .container{
+    display: flex;
     flex-direction: row;
-    background-image: url(emages/bg-desktop.svg);
-  }
-  .mainimg{
-    margin: 64px 59px 108px 80px;
-  }
-  .icon{
-    margin: 45px 0px 0px 80px;
-  }
-  .text{
-    margin-right: 85px;
-  }
-  .socmediaicons{
-    position: relative;
-    top: 200px;
-    left: 460px;
+    gap: 59px;
   }
 }
